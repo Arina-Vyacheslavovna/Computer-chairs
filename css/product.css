@@ -1,0 +1,127 @@
+
+main {
+  padding-top: 70px;
+}
+
+#description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 15px;
+  margin-top: 40px;
+  border: 2px double rgba(203, 255, 161, 0.849);
+  box-shadow: 0 0 30px rgb(234, 255, 215);
+  height: auto;
+}
+
+#description img {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#description .product_description {
+  margin: auto;
+}
+
+#description .product_description .product_wish_list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.product_wish_list .like {
+  background-image: url(../images/like-heart-outline-symbol_icon-icons.com_73226.png);
+  background-size: 25px 25px;
+  height: 25px;
+  width: 25px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+
+.product_wish_list .like:hover {
+    background-image: url(../images/heart-icon_34407.png);
+}
+
+.like.active {
+  background-image: url(../images/heart-icon_34407.png);
+}
+
+
+.product_wish_list + p {
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.product_description p:first-child {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.product_description p:nth-child(2) {
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.product_description + p {
+  padding-top: 30px;
+  width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.slide-three {
+  background-color: rgba(255, 255, 255, 0.295);
+}
+
+table {
+  margin: 10px auto;
+  padding: 15px;
+}
+
+table caption {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+table tr td{
+  padding: 15px;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+
+@media (max-width: 1199px) {
+  #description {
+    width: 730px;
+  }
+}
+
+@media (max-width: 768px) {
+  #description {
+    width: 400px;
+    margin: auto;
+  }
+  
+  table tr td{
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid white;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  #description {
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+  } 
+}
